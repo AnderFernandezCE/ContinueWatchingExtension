@@ -1,0 +1,33 @@
+{
+  "manifest_version": 3,
+  "name": "ContinueWatching",
+  "description": "Creates a continue watching section in gogoanime",
+  "version": "1.0",
+  "permissions": [
+    "storage",
+    "activeTab",
+    "scripting",
+    "tabs"
+],
+  "host_permissions": ["*://*.gogoanime3.net/*"],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "content_scripts":[
+    {
+     "matches":["*://*.gogoanime3.net/*"],
+     "js":["main.js"],
+     "css": ["styles.css"]
+    }
+  ],
+  "web_accessible_resources":[
+    {
+      "resources" : ["assets/add.png", "assets/included.png", "assets/remove.png"],
+      "matches" : ["*://*.gogoanime3.net/*"]
+    }
+  ],
+  "action":{
+    "default_popup": "popup.html"
+  }
+}
