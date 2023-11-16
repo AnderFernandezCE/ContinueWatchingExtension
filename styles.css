@@ -1,0 +1,46 @@
+.custom-container {
+  /* Add styles for the container div */
+  height : 400px;
+  background-color : black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.listContinueWatching{
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  overflow: auto;
+}
+.listStyle{
+  width: 200px;
+  height: 300px;
+  list-style: none;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.adding-btn{
+  width: 25px;
+  height: 25px;
+  background-color: blue;
+}
+.adding-btn.watching{
+  background-color: green;
+}
+.imgContainer{
+  width: 150px;
+  height: 200px;
+}
+.coverImage{
+  width: 200px;
+  height: 250px;
+}
+
+.secondDiv{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
