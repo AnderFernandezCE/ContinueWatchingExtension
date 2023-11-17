@@ -26,17 +26,22 @@
   width: 25px;
   height: 25px;
   background-color: blue;
+  cursor: pointer;
 }
 .adding-btn.watching{
   background-color: green;
 }
 .imgContainer{
-  width: 150px;
-  height: 200px;
+  width: 200px;
+  height: 250px;
 }
 .coverImage{
   width: 200px;
   height: 250px;
+  transition: transform 0.3s ease;
+}
+.coverImage:hover {
+  transform: scale(1.05, 1.05);
 }
 
 .secondDiv{
