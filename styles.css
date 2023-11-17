@@ -1,7 +1,6 @@
 .custom-container {
   /* Add styles for the container div */
   min-height : 100px;
-  max-height: 400px;
   background-color : black;
   display: flex;
   flex-direction: column;
@@ -21,7 +20,7 @@
 }
 .listStyle{
   width: 200px;
-  height: 300px;
+  min-height: 300px;
   list-style: none;
   margin-left: 10px;
   margin-right: 10px;
